@@ -1,0 +1,128 @@
+/*
+https://webgradients.com/
+https://uigradients.com/#Sunset
+https://coolors.co/
+https://color.adobe.com/es/create
+https://flatuicolors.com/
+https://www.materialpalette.com/
+https://material.io/
+*/
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+  font-size:1em;
+}
+
+body {
+  background-image: url("../img/fondo.jpg");
+  padding-bottom: 120vh;
+}
+
+.main-nav {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  width: 100%;
+  height: 5em;
+  position: sticky;
+  top: 0px;
+  box-shadow: 3px 3px 6px #000;
+  z-index: 1;
+  //box-sizing: border-box;
+}
+
+.titulo-nav {
+  width: 95%;
+  height: 5em;
+  color: white;
+  float: left;
+}
+
+.logo-nav-container {
+  margin-top: 0.2em;
+  width: 5%;
+  height: 5em;
+  float: left;
+}
+
+.logo-nav {
+  background-image: url(/img/chrome.png);
+  background-size:cover;
+  //background-position:center;
+  width:4em;
+  height:4em;
+  margin:0.3em auto 0 auto;
+}
+/*
+.logo-nav img {
+width: 100%;
+height: auto;
+}*/
+
+.main {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  margin:auto;
+  margin-top: 100px;
+  width: 550px;
+  //box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color;
+  box-shadow: 3px 3px 6px #000;
+  border-radius: 20px;
+  //overflow-x: hidden;
+  //overflow-y: scroll;
+}
+.cuadros{
+  width:100px;
+  height:100px;
+  margin: 10px;
+  color:white;
+  display:inline-block;
+  padding:30px;
+  border-radius:40px;
+  box-shadow: 3px 3px 6px #000;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* EFECTOS
+div.cuadros:hover{
+  opacity: 0.5;
+}*/
+
+p {
+  text-align:center;
+  margin-top:30px;
+}
+
+
+@media (max-width:1200px) {
+
+.titulo-nav{
+  width: 92%;
+  }
+.logo-nav-container{
+  width: 8%;
+  }
+}
+
+@media (max-width:600px) {
+.titulo-nav{
+  width: 80%;
+  }
+.logo-nav-container{
+  width: 20%;
+  }
+  .main{
+    width: 80vw;
+    height: 90%;
+    display: block;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .cuadros{
+    width: 70%;
+    height: 30vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+*/
