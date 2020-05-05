@@ -1,5 +1,5 @@
 body{
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
@@ -57,7 +57,7 @@ a:link {
 
 .telefono {
   background-color: #fff;
-  background-image: url('../img/logo_cmr.png');
+  background-image: url('../img/volante_CRM2.png');
   background-size: cover;
   width: 10em;
   height: 10em;
@@ -357,18 +357,15 @@ footer{
 
 @media only screen and (max-width: 640px){
 
-  #instagram{
-    bottom:340px;
-    right: 150px;
+  #instagram, #whatsapp, #facebook{
+    position: fixed;
+    width: 2em;
+    height: 2em;
   }
-  #facebook {
-    bottom:440px;
-    right: 150px;
-  }
-  #whatsapp {
-    bottom:540px;
-    right: 150px;
-  }
+  #whatsapp{bottom: 50px;right: 5px;}
+  #facebook{bottom: 100px;right: 5px;}
+  #instagram{bottom: 150px;right: 5px;}
+
   .encabezado {
     height: auto;
     margin: auto;
@@ -381,12 +378,16 @@ footer{
   .telefono{
     position: sticky;
     left: 2em;
-    top: 30%;
+    top: 100%;
     border-radius: 30px;
   }
 
   .contenedor-navegacion{
     height: 210vh;
+  }
+
+  .navegacion{
+    position: static;
   }
   .navegacion li {
     width: 100%;
@@ -454,6 +455,7 @@ footer{
     padding: 0;
     margin-bottom: 3em;
   }
+
 
   .contenedor-navegacion{
     height: 450vh;
