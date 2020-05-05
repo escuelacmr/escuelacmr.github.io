@@ -90,7 +90,7 @@ a:link {
 .cuadros {
   background-color: #ccc;
   width: 100%;
-  height: 600px;
+  height: 620px;
   padding: 2em 0;
   margin: 1em;
   text-align: center;
@@ -124,7 +124,7 @@ a:link {
 .contenedor-cuadros2{
   background-color: #aaa;
   width: 100%;
-  height: 400vh;
+  height: 250vh;
   margin: auto;
   padding: 2em 0;
 }
@@ -283,7 +283,6 @@ footer{
   color: white;
   width: 30%;
   height: 83%;
-  display: inline-block;
   margin: auto;
   float: left;
 }
@@ -357,9 +356,7 @@ footer{
 
 
 @media only screen and (max-width: 640px){
-  .navegacion li {
-    width: 100%;
-  }
+
   #instagram{
     bottom:340px;
     right: 150px;
@@ -374,8 +371,92 @@ footer{
   }
   .encabezado {
     height: auto;
+    margin: auto;
+    border-radius: 30px;
+    float: none;
   }
   .contenedor-encabezado{
     width: 100%;
   }
+  .telefono{
+    position: sticky;
+    left: 2em;
+    top: 30%;
+    border-radius: 30px;
+  }
+
+  .contenedor-navegacion{
+    height: 210vh;
+  }
+  .navegacion li {
+    width: 100%;
+    height: 3em;
+    margin: auto;
+  }
+  .contenedor-cuadros{
+    width: auto;
+    height: 150vh;
+  }
+  .cuadros{
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .cuadros h2{
+    font-size: 2em;
+  }
+  .cuadros p{
+    margin: 0.7em 0.7em;
+    text-align: left;
+    font-size: 1em;
+  }
+  .contenedor-cuadros2{
+    height: 340vh;
+  }
+  .cuadros2{
+    width: 90%;
+    position: static;
+  }
+  .cuadro2-texto{
+    width: auto;
+    height: auto;
+    padding: 1em 1em;
+    margin: 3em 0 0 0;
+    border-radius: 30px 30px 0 0;
+  }
+  .cuadro2-texto p{
+    font-size: 1em;
+    width: auto;
+    margin: 0.2em 0;
+  }
+  .cuadro2-imagen{
+    position: static;
+    width: auto;
+  }
+  .cuadro2-imagen p {
+    margin: 0;
+    padding: 0.3em 0.5em;
+  }
+  #titulo2, #titulo3 {
+    font-size: 36px
+  }
+  footer{
+    padding-top: 4em;
+    height: 170vh;
+  }
+  .pie-contenedor{
+    height: auto;
+  }
+  .pie{
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-bottom: 3em;
+  }
+
+  .contenedor-navegacion{
+    height: 450vh;
+  }
+
 }
